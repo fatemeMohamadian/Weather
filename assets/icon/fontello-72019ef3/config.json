@@ -1,0 +1,136 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "09cad6e46ec29b279626434802012bba",
+      "css": "linkedin-2",
+      "code": 59392,
+      "src": "elusive"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0ece9a12de796b8411f868d582bee678",
+      "css": "github-squared",
+      "code": 62208,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a42f298da5c64e646a5d532724cd6e15",
+      "css": "home-outline",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "34cb6ce62bf3f1efd59e2f5eb0d79f82",
+      "css": "wechat",
+      "code": 61911,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ea2d9a8c51ca42b38ef0d2a07f16d9a7",
+      "css": "chart-line",
+      "code": 61953,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "76f961b11f65300838a5a78856aca30f",
+      "css": "th-large",
+      "code": 59394,
+      "src": "elusive"
+    },
+    {
+      "uid": "d862a10e1448589215be19702f98f2c1",
+      "css": "smile",
+      "code": 61720,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1bafeeb1808a5fe24484c7890096901a",
+      "css": "user-plus",
+      "code": 62004,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e99461abfef3923546da8d745372c995",
+      "css": "cog",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3a89ddb1c81111c15d6c4e26cc3c546a",
+      "css": "cog-outline",
+      "code": 59396,
+      "src": "typicons"
+    },
+    {
+      "uid": "p57wgnf4glngbchbucdi029iptu8oxb8",
+      "css": "pin",
+      "code": 59397,
+      "src": "typicons"
+    },
+    {
+      "uid": "a73c5deb486c8d66249811642e5d719a",
+      "css": "arrows-cw",
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ivmsk67zo1yb1tthd3ugi4xnb3get418",
+      "css": "sun",
+      "code": 59399,
+      "src": "typicons"
+    },
+    {
+      "uid": "id8wp0cygl9trzbhlbd9o0fygiesi629",
+      "css": "search-1",
+      "code": 59401,
+      "src": "modernpics"
+    },
+    {
+      "uid": "c22930d29b554d41c0ef882aafd3f8c9",
+      "css": "thermometer-2",
+      "code": 62153,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d10920db2e79c997c5e783279291970c",
+      "css": "dot-3",
+      "code": 59400,
+      "src": "entypo"
+    },
+    {
+      "uid": "06301c50d89b5d3e651bd07ebd6d7de7",
+      "css": "cancel-1",
+      "code": 59403,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "07f0832c07f3d9713fffb06c8bffa027",
+      "css": "window-maximize",
+      "code": 62160,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "04f022b8bd044d4ccfffd3887ff72088",
+      "css": "window-minimize",
+      "code": 62161,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "39a24b1eb625a4a551585745107e8ef0",
+      "css": "celcius",
+      "code": 59402,
+      "src": "meteocons"
+    }
+  ]
+}

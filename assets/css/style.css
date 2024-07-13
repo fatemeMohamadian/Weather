@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "title";
+  src: url("../font/Merriweather-Bold.ttf");
+}
+@font-face {
+  font-family: "project";
+  src: url("../font/PlayfairDisplay-Bold.ttf");
+}
+@font-face {
+  font-family: "text";
+  src: url("../font/JosefinSlab-Bold.ttf");
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main {
+  height: 100vh;
+  position: relative;
+}
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 133, 248, 0.36);
+}
+main > video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+}
+
+.row {
+  position: absolute;
+  z-index: 1000;
+}
+.row .header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(2, 69, 131);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row .header > * {
+  color: white;
+}
+.row .header > .title {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row .header > .title > h3 {
+  font-family: "text";
+  font-size: 30px;
+}
+.row .header > .title > h3 > a {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+.row .header > .title > h3 > a:hover {
+  color: rgb(252, 252, 65);
+}
+.row .header > .back {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.row .header > .back > li {
+  list-style-type: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row .header > .back > li > i {
+  font-size: 25px;
+  opacity: 90%;
+  color: rgb(231, 231, 231);
+}
+.row .header > .back > li:nth-of-type(2) > i {
+  font-size: 20px;
+}
+.row .header > .back > li:nth-of-type(3) > i {
+  font-size: 30px;
+  transition: 0.4s;
+}
+.row .header > .back > li:hover:nth-of-type(3) > i {
+  color: red;
+}
+.row .sidebar {
+  height: calc(100vh - 60px);
+  width: 75px;
+  position: fixed;
+  top: 60px;
+  background-color: rgba(0, 0, 0, 0.928);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+.row .sidebar > * {
+  color: white;
+  cursor: pointer;
+}
+.row .sidebar > .setting {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row .sidebar > .setting > li {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: 0.4s;
+}
+.row .sidebar > .setting > li > * {
+  padding: 10px 0;
+}
+.row .sidebar > .setting > li > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row .sidebar > .setting > li:nth-of-type(4) > i {
+  font-size: 28px;
+}
+.row .sidebar > .listicon {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row .sidebar > .listicon > li {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row .pinitem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(0, 24, 86);
+  width: calc(100% - 75px);
+  transform: translateX(75px);
+  transition: 1s;
+}
+.row .pinitem > * {
+  color: white;
+  margin: 15px 0;
+}
+.row .pinitem > .text {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.row .pinitem > .text > h2 {
+  font-family: "project";
+  font-size: 30px;
+}
+.row .pinitem > .option {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.row .pinitem > .option > li {
+  list-style-type: none;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.row .pinitem > .option > li > i {
+  font-size: 25px;
+  transition: 0.4s;
+}
+.row .pinitem > .option > li:nth-of-type(1):hover {
+  transform: rotateZ(180deg);
+}
+.row .pinitem > .option > li:nth-of-type(2):hover > i {
+  color: rgb(242, 89, 89);
+}
+.row .pinitem > .option > li:nth-of-type(3) {
+  animation: rotsun 3s infinite linear alternate;
+}
+.row .pinitem > .option > li:nth-of-type(3) > i {
+  color: rgb(255, 255, 54);
+  font-size: 30px;
+}
+.row .pinitem > .search {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.row .pinitem > .search > .inpsearch {
+  height: 40px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(114, 114, 231, 0.889);
+  box-shadow: 0 0 100px 10px rgb(19, 76, 220);
+  color: white;
+}
+.row .pinitem > .search > .inpsearch::-moz-placeholder {
+  color: white;
+}
+.row .pinitem > .search > .inpsearch::placeholder {
+  color: white;
+}
+.row .pinitem > .search > .btnsearch {
+  width: 50px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(13, 138, 234, 0.65);
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.row .pinitem > .search > .btnsearch:hover {
+  background-color: rgb(255, 255, 255);
+}
+.row .pinitem > .search > .btnsearch:hover > i {
+  color: rgb(13, 138, 234);
+}
+.row .pinitem > .search > .btnsearch > i {
+  font-size: 25px;
+  color: white;
+  transition: 0.4s;
+}
+.row .tempmain {
+  width: calc(100% - 75px);
+  transform: translateX(75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row .tempmain > * {
+  margin: 20px 0;
+}
+.row .tempmain > .tempcity {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.row .tempmain > .tempcity > * {
+  color: white;
+  margin: 10px 0;
+}
+.row .tempmain > .tempcity > h3 {
+  width: 100%;
+  font-family: "title";
+  font-size: 40px;
+  text-shadow: 2px 2px 2px rgb(207, 1, 1);
+}
+.row .tempmain > .tempcity > .cel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row .tempmain > .tempcity > .cel > * {
+  margin: 10px 0;
+}
+.row .tempmain > .tempcity > .cel > .pic {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+.row .tempmain > .tempcity > .cel > .pic > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.row .tempmain > .tempcity > .cel > h1 {
+  font-family: "title";
+  font-size: 70px;
+  text-shadow: 2px 2px 2px rgb(18, 216, 255);
+}
+.row .tempmain > .tempcity > .cel > i {
+  font-size: 50px;
+  display: flex;
+  transform: translateY(-5px);
+}
+.row .tempmain > .tempcity > h4 {
+  width: 100%;
+  font-family: "text";
+  font-size: 35px;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 2px rgb(1, 1, 113);
+}
+.row .tempmain > .tempcity > p {
+  width: 100%;
+  font-family: "title";
+}
+.row .tempmain > .tempcity > span {
+  margin: 10px 15px;
+  font-family: "text";
+  font-size: 25px;
+  text-shadow: 2px 2px 2px rgb(9, 144, 228);
+}
+.row .tempmain > .dailytemp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: hidden;
+}
+.row .tempmain > .dailytemp > .swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.row .tempmain > .dailytemp > .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: red;
+}
+.row .tempmain > .dailytemp > .swiper .swiper-button-next {
+  color: white;
+  --swiper-navigation-size:20px ;
+}
+.row .tempmain > .dailytemp > .swiper .swiper-button-prev {
+  color: white;
+  --swiper-navigation-size:20px ;
+}
+.row .tempmain > .dailytemp > .swiper .swiper-slide {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row .tempmain > .dailytemp > .swiper .swiper-slide > * {
+  color: white;
+}
+.row .tempmain > .dailytemp > .swiper .swiper-slide > h4 {
+  width: 100%;
+  font-family: "title";
+  text-shadow: 2px 2px 2px rgb(71, 0, 77);
+}
+.row .tempmain > .dailytemp > .swiper .swiper-slide > h5 {
+  width: 100%;
+  font-family: "text";
+  line-height: 30px;
+  text-shadow: 2px 2px 2px rgb(1, 78, 50);
+}
+.row .tempmain > .dailytemp > .swiper .swiper-slide > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row .tempmain > .dailytemp > .swiper .swiper-slide > div > img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.row .tempmain > .dailytemp > .swiper .swiper-slide > h3 {
+  width: 100%;
+  font-family: "title";
+  text-shadow: 2px 2px 2px rgb(2, 73, 195);
+}
+.row .tempmain > .dailytemp > .swiper .swiper-slide > h3 > span {
+  font-size: 18px;
+  opacity: 70%;
+  font-family: "text";
+}
+.row .tempmain > .dailytemp > .swiper .swiper-slide > p {
+  font-family: "title";
+  font-size: 16px;
+  text-shadow: 2px 2px 2px rgba(32, 1, 104, 0.874);
+}
+
+@keyframes rotsun {
+  to {
+    transform: rotateZ(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
